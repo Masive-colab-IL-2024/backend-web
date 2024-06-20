@@ -1,0 +1,57 @@
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+  "name": "Imatiww",
+  "email": "imaswwwtso2@gmail.com",
+  "password": "1213",
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email": "imato@gmail.com",
+  "password": "123"
+}
+
+###
+POST http://localhost:5000/get-token
+
+
+###
+GET  http://localhost:5000/get_news/
+
+
+###
+GET  http://localhost:5000/get_history/early_blight-6369
+
+###
+POST http://localhost:5000/get_history
+Content-Type: application/json
+
+{
+  "predicted_class": "lorem",
+  "confidence": "01,21111"
+}
+###
+
+POST http://localhost:5000/create_news/update/konten_1
+Content-Type: application/json
+
+{
+  "slug": "Example News update",
+  "image": "example.png",
+  "content": "Lorem ipsum dolor sit amet...",
+  "categories": "category1",
+  "author": "John shena"
+}
+
+
+###
+POST  http://localhost:5000/get_news/delete/example-news-title-963
+
+

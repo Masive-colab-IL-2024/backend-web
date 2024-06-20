@@ -1,0 +1,31 @@
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nama VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  refresh_token TEXT NOT NULL,
+  createdAt DATETIME NOT NULL,
+  updatedAt DATETIME NOT NULL
+);
+
+CREATE TABLE history (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  slug CHAR(255) NOT NULL,
+  predicted_class VARCHAR(255) NOT NULL,
+  confidence VARCHAR(255) NOT NULL,
+  createdAt DATETIME NOT NULL,
+  updatedAt DATETIME NOT NULL
+);
+
+
+CREATE TABLE news (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  slug CHAR(255) NOT NULL,
+  title VARCHAR(255) NOT NULL,
+  image VARCHAR(255) NOT NULL,
+  content TEXT NOT NULL,
+  categories TEXT NOT NULL,
+  author VARCHAR(255) NOT NULL,
+  createdAt DATETIME NOT NULL,
+  updatedAt DATETIME NOT NULL
+);
