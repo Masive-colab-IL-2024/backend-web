@@ -26,3 +26,4 @@ app.listen(process.env.APP_PORT, async () => {
   await testConnection();
   console.log(`Server running di port ${process.env.APP_PORT}`);
 });
+module.exports = app;
